@@ -1,0 +1,5 @@
+venv/
+public/audio/
+public/videos/
+__pycache__/
+.env

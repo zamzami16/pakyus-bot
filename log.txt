@@ -1,0 +1,80 @@
+2024-02-25 16:52:13,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getMe "HTTP/1.1 200 OK"
+2024-02-25 16:52:13,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/deleteWebhook "HTTP/1.1 200 OK"
+2024-02-25 16:52:13,374 - telegram.ext.Application - INFO - Application started
+2024-02-25 16:52:15,525 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:52:15,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/sendMessage "HTTP/1.1 400 Bad Request"
+2024-02-25 16:52:15,838 - root - ERROR - Message text is empty
+2024-02-25 16:52:15,838 - telegram.ext.Application - ERROR - An error was raised and an uncaught error was raised while handling the error with an error_handler.
+Traceback (most recent call last):
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\ext\_application.py", line 1264, in process_update
+    await coroutine
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 157, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\pak_yus_bot.py", line 41, in caps
+    await context.bot.send_message(
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\ext\_extbot.py", line 2820, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\_bot.py", line 542, in decorator
+    result = await func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\_bot.py", line 1018, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\ext\_extbot.py", line 581, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\_bot.py", line 736, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\_bot.py", line 630, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\ext\_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\_bot.py", line 658, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\request\_baserequest.py", line 379, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message text is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mohyusufz\Desktop\python\pakyus-bot\VENV\Lib\site-packages\telegram\ext\_application.py", line 1820, in process_error
+    await callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2024-02-25 16:52:25,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:52:36,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:52:46,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:52:52,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:52:52,998 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-02-25 16:52:52,998 - telegram.ext.Application - INFO - Application.stop() complete
+2024-02-25 16:55:23,631 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getMe "HTTP/1.1 200 OK"
+2024-02-25 16:55:23,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/deleteWebhook "HTTP/1.1 200 OK"
+2024-02-25 16:55:23,880 - telegram.ext.Application - INFO - Application started
+2024-02-25 16:55:35,405 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:55:45,611 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:55:55,885 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:56:06,123 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:56:16,469 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:56:26,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:56:36,947 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:56:45,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:56:46,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/sendMessage "HTTP/1.1 200 OK"
+2024-02-25 16:56:55,999 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:06,216 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:16,427 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:26,703 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:36,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:39,701 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:40,634 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/sendMessage "HTTP/1.1 200 OK"
+2024-02-25 16:57:44,841 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6915777111:AAEoWkWX5rMKw8BO2QPglKVGOFUf8w_-Db0/getUpdates "HTTP/1.1 200 OK"
+2024-02-25 16:57:44,841 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-02-25 16:57:44,841 - telegram.ext.Application - INFO - Application.stop() complete
